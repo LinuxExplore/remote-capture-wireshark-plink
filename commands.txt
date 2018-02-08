@@ -1,0 +1,4 @@
+# Do not modify the following commands and the sequence.
+mkfifo /tmp/test.fifo
+chmod +r /tmp/test.fifo
+sudo -- sh -c '/usr/sbin/tcpdump -i any -w /tmp/test.fifo -s 0 not port 22; rm -f /tmp/test.fifo'

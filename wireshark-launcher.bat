@@ -1,0 +1,1 @@
+plink -t -ssh -l admin -pw password 192.168.0.1 "cat /tmp/test.fifo" | "C:\Program Files\Wireshark\Wireshark.exe" -k -i -
